@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <style>
+        .img-size {
+            width: 100px;
+            height: 100px;
+        }
+        .out_line {
+            border: 2px solid black;
+            width: 1000px;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            font-size: 20pt;
+        }
+        .out_line td{
+            border: 1px solid black;
+        }
+        .background.first {
+            background: red;
+            height:100px;
+        }
+        .background.second {
+            background: orange;
+        }
+        .background.third {
+            background: yellow;
+        }
+        .background.fourth {
+            background: green;
+        }
+        .background.fifth {
+            background: blue;
+            height:100px;
+        }
+        .first_text_and_last_text {
+            text-align: center;
+            font-size: 40pt;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <table class="out_line">
+            <tr>
+                <td colspan="5" class="background first first_text_and_last_text">장바구니</td>
+            </tr>
+            <tr class="background second">
+                <td><h2>이미지</h2></td>
+                <td>품명</td>
+                <td>수량</td>
+                <td>가격</td>
+                <td>총 가격</td>
+            </tr>
+            <tr class="background third">
+                <td><img src="drone.jpg" alt="..." class="img-size"></td>
+                <td>드론</td>
+                <td>3</td>
+                <td>150000</td>
+                <td>450000</td>
+            </tr>
+            <tr class="background fourth">
+                <td><img src="apple.jpg" alt="..." class="img-size"></td>
+                <td>사과</td>
+                <td>5</td>
+                <td>1000</td>
+                <td>5000</td>
+            </tr>
+            <tr class="background fifth first_text_and_last_text">
+                <td colspan="5">총 가격=</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

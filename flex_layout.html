@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .my-box{
+        width: 800px;
+        height: 200px;
+        border:2px dashed yellowgreen;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap:wrap;/*크기 초과시 밑으로 떨궈버림*/
+    }
+    .my-box div{
+        width: 300px;
+        background: plum;
+    }
+    </style>
+</head>
+<body>
+    <!--div 속성 
+        display:flex;
+    flex-direction : row(기본값 row 변경하려면 column)  
+    align-items : center;(row면은 세로정렬,column이면 가로정렬[교차축 정렬])
+    justify-content:center; (flex-direction 방향으로 정렬[center,flex-end,flex-start])
+    flex-wrap:wrap(기본값은 크기를 초과해도 최대한 맞춤,wrap크기 초과하면 밑으로 떨어짐)
+    flex-grow:1 (차지하는 비율을 자식에게 할당, 안주면 0)-->
+    <div class="my-box">
+        <div style="flex-grow: 1;">first</div>
+        <div>second</div>
+        <div>third</div>
+        <div>fourth</div>
+    </div>
+</body>
+</html>

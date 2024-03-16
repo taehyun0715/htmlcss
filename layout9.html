@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks sample</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+        body{
+            margin:0;
+        }
+        .section-header{
+            width:100%;
+            background:rgb(246,245,239);
+            height:10vh;
+        }
+        .inner-header{
+            width:1100px;
+            height:100%;
+            display:flex;
+            justify-content: space-between;
+            margin:auto;
+            padding-left:100px;
+            align-items: center;
+        }
+        .logo{
+            width:75px;
+            height:75px;
+        }
+        .logo img{
+            width:100%;
+            height:100%;
+        }
+        .space-nav{
+
+        }
+        .space-nav li{
+            display:inline-block;
+            padding-right:15px;
+            padding-left:15px;
+            border-right:1px solid lightgray;
+        }
+        .top-nav{
+            height:45px;
+            font-size:13px;
+            display:flex;
+            justify-content: flex-end;
+        }
+        .top-nav a{
+            color:black;
+            text-decoration: none;
+        }
+        .top-nav a:hover{
+            text-decoration: underline;
+        }
+        .bottom-nav{
+            display:flex;
+            justify-content: flex-end;
+        }
+        .bottom-nav a{
+            color:black;
+            text-decoration: none;
+        }
+        .bottom-nav a:hover{
+            color:green;
+            text-decoration: underline;
+        }
+        .section-one{
+            background-image: url(./background.png);
+            width:100%;
+            height:32vw;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            position:relative;
+        }
+        .section-one .text-img{
+            position:absolute;
+            left:20%;
+            top:20%;
+            width:20%
+        }
+        .section-one .detail-btn{
+            position: absolute;
+            left:25%;
+            top:65%;
+            width:150px;
+            background: transparent;
+            border: 2px solid darkgreen;
+            border-radius: 5px;
+            padding:10px;
+        }
+        .section-one .detail-btn:hover{
+            background: darkgreen;
+            color:white;
+            text-decoration: underline;
+
+        }
+        .section-one .milk-tea{
+            position: absolute;
+            left:50%;
+            top:15%;
+        }
+        .section-one .jamong-tea{
+            position: absolute;
+            left:55%;
+            top:58%;
+        }
+        .section-one .cookie-latte{
+            position: absolute;
+            left:65%;
+            top:17%;
+        }
+    </style>
+</head>
+<body>
+    <div class="section-header">
+        <div class="inner-header">
+            <div class="logo">
+                <img src="./starbucks_logo.png" alt="">
+            </div>
+            <div class="space-nav">
+            <div class="top-nav">
+                <ul>
+                    <li><a herf="#">Sign in</a></li>
+                    <li><a herf="#">My Starbucks</a></li>
+                    <li><a herf="#">Customer Service & Ideas</a></li>
+                    <li><a herf="#">Find a Store</a></li>
+                    <li><button><i class="fa-solid fa-magnifying-glass"></i></button></li>
+                </ul>
+            </div>    
+            <div class="bottom-nav">
+                <ul>
+                    <li><a herf="#">COFFEE</a></li>
+                    <li><a herf="#">MENU</a></li>
+                    <li><a herf="#">STORE</a></li>
+                    <li><a herf="#">RESPONSIBILITY</a></li>
+                    <li><a herf="#">STARBUCKS REWARD</a></li>
+                    <li><a herf="#">CORPORATE SALES</a></li>
+                    <li><a herf="#">WHAT'S NEW</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-one">
+        <img src="./starbucks.png" alt="" class-="text-img">
+        <button class="detail-btn">자세히보기</button>
+        <img src="./white taro latte.png" alt="" class="milk-tea">
+        <img src="./espresso cookie latte.png" alt="" class="cookie-latte">
+        <img src="./jamong tea.png" alt="" class="jamong-tea">
+    </div>
+</body>
+</html>

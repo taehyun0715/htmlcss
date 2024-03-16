@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition 샘플</title>
+    <style>
+    .asdf{
+        width:100px;
+        height:100px;
+        background: purple;
+        transition:background color 1s;
+    }
+    .asdf:hover{
+        background: violet;
+    }
+    .asdf:hover span{
+        color:white;
+    }
+    </style>
+</head>
+<body>
+    <div class="asdf">
+        마우스를 올리면 <span>색</span>이 바뀝니다
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서</title>
+    <style>
+        .img-box {
+            background-image: url(./apple.jpg);
+            width: 100%;
+            height: 40vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            height: 50vh;
+        }
+
+        @media screen and (max-width: 768px) {
+            .img-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- div 백그라운드 이미지: 웹에서는 한 라인에 2개씩, 모바일에서는 한 라인에 1개씩 -->
+    <div>
+        <div class="img-box"></div>
+    </div>
+</body>
+</html>
